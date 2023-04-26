@@ -1,5 +1,5 @@
 export function Habit() {
     return(
-        <div>TESTE</div>
+        <div>TESTEs</div>
     )
 }
