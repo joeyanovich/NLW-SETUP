@@ -3,7 +3,7 @@ import { ScrollView, Text, TextInput, TouchableOpacity, View } from "react-nativ
 import { Feather } from '@expo/vector-icons';
 
 import { BackButton } from "../components/BackButton";
-import { Checkout } from "../components/Checkbox";
+import { Checkbox } from "../components/Checkbox";
 import colors from "tailwindcss/colors";
 
 const availableWeekDays = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado']
@@ -33,7 +33,7 @@ export function New() {
                     Qual seu comprometimento
                 </Text>
                 <TextInput
-                    className="h-12 pl-4 rounded-lg mt-3 bg-zinc-800 text-white focus:border-2 focus:border-green-600"
+                    className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white border-2 border-zinc-800 focus:border-green-600"
                     placeholder="Exercícios, dormir bem, etc."
                     placeholderTextColor={colors.zinc[400]}
                 />
@@ -42,7 +42,7 @@ export function New() {
                 </Text>
                 {
                     availableWeekDays.map((weekDay, index) => (
-                        <Checkout
+                        <Checkbox
                             key={weekDay}
                             title={weekDay}
                             checked={weekDays.includes(index)}
