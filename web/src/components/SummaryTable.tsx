@@ -14,7 +14,7 @@ const amountOfDaysToFill = minimumSummaryDatesSize - summaryDates.length
 type Summary = {
     id: string;
     date: string;
-    amout: number;
+    amount: number;
     completed: number;
 }[]
 
@@ -51,7 +51,7 @@ export function SummaryTable() {
                     <HabitDay
                         key={date.toString()}
                         date={date}
-                        amount={dayInSummary?.amout}
+                        amount={dayInSummary?.amount}
                         defaultCompleted={dayInSummary?.completed}
                          />
                     )
